@@ -1,0 +1,41 @@
+#rt{
+    width:100%;
+    display:table;
+    }
+    #rtc{
+    display:table-caption;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    }
+    #rth{
+    display:table-header-group;
+    background-color:gray;
+    font-size:25px;
+    font-weight:bold;
+    }
+    .thcl{
+    display:table-cell;
+    padding : 10px;
+    text-align :justify;
+    border-bottom : 1px solid black;
+    
+    }
+    #rtb{
+    display:table-row-group;
+    }
+    .rtrw{
+    display:table-row;
+    }
+    .tbc{
+    display:table-cell;
+    padding : 10px;
+    border-bottom : 1px solid black;
+    }
+    .highlight{
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+    }
+    
+        
