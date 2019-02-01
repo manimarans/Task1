@@ -38,4 +38,9 @@
         cursor: pointer;
     }
     
+    .container{
+        width : 1250px;
+        height: 810px;
+        overflow: auto;
+    }
         

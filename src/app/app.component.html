@@ -1,1 +1,4 @@
-<app-dynamic-table [data]="data"></app-dynamic-table>
+<div *ngIf="!isRetrived">
+    Loading data....
+</div>
+<app-dynamic-table *ngIf="isRetrived" [data]="data"></app-dynamic-table>

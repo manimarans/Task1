@@ -1,18 +1,21 @@
-<div *ngIf="!isLoaded">
-  Loading data....
+<div *ngIf="isContainsComplexObject">
+    <button (click)="getKeysByStringValue()">Show only string values</button>
+    <button (click)="getAllKeys()">Show All</button>
 </div>
-<div id="rt" *ngIf="isLoaded">
-    <div id="rtc">
-        Task1 : Dynamic Table
-    </div>
-  <div id="rth">
-    <div class="thcl" *ngFor="let header of headerArray">{{header | uppercase | titlecase}}</div>
-  </div> 
-  <div id = "rtb"> 
-      <div class="rtrw"  *ngFor="let row of data ">
-        <div class="tbc" *ngFor="let header of headerArray">
-            {{row[header]}}   
+<div class="container">
+    <div id="rt" >
+        <div id="rtc">
+            Task1 : Dynamic Table
+        </div>
+    <div id="rth">
+        <div class="thcl" *ngFor="let header of headerArray">{{header | uppercase | titlecase}}</div>
+    </div> 
+    <div id = "rtb"> 
+        <div class="rtrw"  *ngFor="let row of data ">
+            <div class="tbc" *ngFor="let header of headerArray">
+                {{row[header]}}   
+            </div>
         </div>
     </div>
- </div>
+    </div>
 </div>
